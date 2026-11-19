@@ -5,5 +5,6 @@ import jakarta.validation.constraints.NotBlank;
 public record EmployeeDTO (
     String id,
     @NotBlank String name,
-    String email
+    String email,
+    Long departmentId
 ) { }

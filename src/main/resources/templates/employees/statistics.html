@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Statistics</title>
+</head>
+<body>
+<h2>Employee Statistics</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Employee Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="stat : ${statistics}">
+            <td th:text="${stat.departmentName}"></td>
+            <td th:text="${stat.employeeCount}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

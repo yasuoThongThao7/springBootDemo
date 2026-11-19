@@ -1,5 +1,10 @@
 package com.example.springbootdemo.core.util;
 
-public class UtilityService {
+import org.springframework.stereotype.Service;
 
+@Service
+public class UtilityService {
+    public String getGreetingMessage(String name) {
+        return "Hello, " + name + "! Welcome to the Spring Boot Demo application.";
+    }
 }
